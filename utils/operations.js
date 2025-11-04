@@ -1,16 +1,30 @@
+import { forEach } from "lodash"
+
 export function add(numbers) {
-  return {/*write code here*/}
+  return numbers.reduce((sum, num) => sum + num, 0);
 }
 
 export function subtract(numbers) {
-  return {/*write code here*/}
+  let sum;
+  for (number in numbers){
+    sum -= number;
+  }
+  return sum; 
 }
 
 export function multiply(numbers) {
-  return {/*write code here*/}
+  let sum;
+  for (number in numbers){
+    sum += number;
+  }
+  return sum; 
 }
 
 export function divide(numbers) {
-  return {/*write code here*/}
+  let sum;
+  for (number in numbers){
+    sum += number;
+  }
+  return sum; 
 }
 
