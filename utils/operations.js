@@ -5,26 +5,17 @@ export function add(numbers) {
 }
 
 export function subtract(numbers) {
-  let sum;
-  for (number in numbers){
-    sum -= number;
-  }
-  return sum; 
-}
+  return numbers.reduce((sub, num) => sub - num, 0);
 
 export function multiply(numbers) {
-  let sum;
-  for (number in numbers){
-    sum += number;
-  }
-  return sum; 
+  return numbers.reduce((mult, num) => mult * num, 0);
 }
 
 export function divide(numbers) {
-  let sum;
-  for (number in numbers){
-    sum += number;
+  if(//divided by zero ){
+    return numbers.reduce((div, num) => div / num, 0);
   }
-  return sum; 
+  else{
+    return console.log("You cant divide by zero");
+  }
 }
-
